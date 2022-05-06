@@ -4,7 +4,7 @@
 html{
     font-family:Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
-    background-image: url(Images/background.png);
+    background-image: url("Images/SNCF_BackGround.png");
     background-attachment: fixed;
     background-size: cover;
 }

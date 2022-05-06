@@ -2,11 +2,15 @@
 <html>
     {% extends "main.html" %}
     {% load static %}
-    {% block head %}
-    {% endblock %}
+    <head>
+        {% block head %}
+        {% endblock %}
+    </head>
     <body>
-       {% block bar %}
-       {% endblock %}
+        <header class="header1">
+            {% block bar %}
+            {% endblock %}
+        </header>
         <section class="train" id="passion">
             <h1>Mes passions</h1>
             <a href="passion.html" target="_blank">
