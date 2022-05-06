@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    {% block Head %}
+    <head>
+        {% load static %}
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="{%static 'WebR209/mef.css'%}">
+        <title>Projet Django</title>
+    </head>
+    {% endblock %}
+    <body>
+        {% block bar %}
+        <header class="header1">
+            <div>
+                <h2 class=titleheader>Le Projet Django...</h2>
+            </div>
+            <div class="header2">
+                <a title="Aller vers 'Ma passion'" href="#passion">Ma passion</a>
+                <a title="Aller vers 'Présentation'" href="#presentation">Présentation</a>
+                <a title="Aller vers 'Mon parcours'" href="#parcours">Mon parcours</a>
+                <a title="Aller vers 'Mes compétences'" href="#competence">Mes compétences</a>
+                <a title="Aller vers 'Invisible sur Internet" href="#invisible">Invisible sur internet</a>
+            </div>
+        </header>
+        {% endblock %}
+    </body>
+</html>

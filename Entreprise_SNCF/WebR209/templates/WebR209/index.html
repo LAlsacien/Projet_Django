@@ -1,25 +1,12 @@
 <!doctype html>
 <html>
-    <head>
-        {% load static %}
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" type="text/css" href="{%static 'WebR209/mef.css'%}">
-
-        <title>CHEVALLIER Hugo - Web</title>
-    </head>
+    {% extends "main.html" %}
+    {% load static %}
+    {% block head %}
+    {% endblock %}
     <body>
-        <header class="header1">
-            <div>
-                <h2 class=titleheader>CHEVALLIER Hugo - À propos de moi</h2>
-            </div>
-            <div class="header2">
-                <a title="Aller vers 'Ma passion'" href="#passion">Ma passion</a>
-                <a title="Aller vers 'Présentation'" href="#presentation">Présentation</a>
-                <a title="Aller vers 'Mon parcours'" href="#parcours">Mon parcours</a>
-                <a title="Aller vers 'Mes compétences'" href="#competence">Mes compétences</a>
-                <a title="Aller vers 'Invisible sur Internet" href="#invisible">Invisible sur internet</a>
-            </div>
-        </header>
+       {% block bar %}
+       {% endblock %}
         <section class="train" id="passion">
             <h1>Mes passions</h1>
             <a href="passion.html" target="_blank">
